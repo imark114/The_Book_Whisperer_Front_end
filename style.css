@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 80%;
+    margin: 0 auto !important;
+}
+.nav_section{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+.nav_logo img{
+    height: 55px;
+}
+.nav_logo h5{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.menu_container{
+    width: 50%;
+}
+.nav_menus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav_menus li{
+    font-size: 17px;
+    font-weight: 600;
+}
+.nav_menus li a{
+    text-decoration: none;
+    color: black;
+}
+.write_riview{
+    background-color: #f4cd70;
+    padding: 6px 7px;
+    border-radius: 21px;
+}
+.signup_btn, .login_btn{
+    padding: 7px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #ff6582;
+    cursor: pointer;
+    color: white !important;
+}
+.login_btn{
+    background-color: #9FA8DA;
+}
+
+/* Banner section */
+.banner_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.header_lef_seide{
+    width: 45%;
+}
+.banner_heading{
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 4px 4px rgba(60,53,53,0.43);
+
+}
+.no_data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.no_data img{
+    height: 300px;
+}
+.no_data h2{
+    color: #f22c2c;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.books_sections{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.filtering_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.category_li{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.category_li:hover{
+    background-color: #1313f1f0;
+}
+.hide_btn{
+    display: none;
+}

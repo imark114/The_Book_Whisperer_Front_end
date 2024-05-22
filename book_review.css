@@ -1,0 +1,99 @@
+.information_area{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.book_img img{
+    height: 500px;
+    box-shadow: -1px 4px 26px -7px rgba(0,0,0,0.63);
+
+}
+.book_details{
+    width: 40%;
+}
+.core_details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.core_details p{
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.book_button button{
+    text-decoration: none;
+    padding: 10px 23px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+}
+.genre button{
+    padding: 1px 7px;
+    border-radius: 11px;
+    margin-left: 4px;
+    background: none;
+}
+.cart_btn{
+    background-color: #e5b004;
+}
+.wish_btn{
+    background-color: #6bcfda;
+}
+.book_review{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.review_section{
+    width: 250px;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}

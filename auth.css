@@ -1,0 +1,38 @@
+.singup_section{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.form_section{
+    width: 40%;
+}
+.form_section form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form_section form input{
+    padding: 13px 5px;
+    box-shadow: 1px 5px 10px -3px rgba(128,128,128,0.75);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+}
+.form_section p{
+    margin-top: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.submit_btn{
+    background: #f4cd70;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+#success{
+    font-size: 18px;
+    font-weight: 600;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Whisperer </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./auth.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./app.js" defer></script>
+    <script src="./auth.js"></script>
+
+</head>
+<body>
+    <nav class="nav_section">
+        <div class="nav_logo">
+          <img src="./images/logo.png" alt="Logo" />
+          <h5>The Book Whisperer</h5>
+        </div>
+        <div class="menu_container">
+          <ul class="nav_menus">
+            <li><a href="./index.html">Home</a></li>
+            <li>
+              <a class="write_riview" href="./publish_book.html">
+                <i class="fas fa-plus-square"></i> Add Books</a
+              >
+            </li>
+            <div class="user_action_area d-flex gap-4 align-items-center">
+              <li id="signup_btn">
+                <a class="signup_btn" href="./registration.html">Signup</a>
+              </li>
+              <li id="login_btn"><a class="login_btn" href="./login.html">Login</a></li>
+              <li id="profile_btn">
+                <a class="login_btn" href="./profile.html">Profile</a>
+              </li>
+              <li id="logout_btn">
+                <a class="signup_btn" onclick="handleLogout()">Logout</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+
+    <section class="singup_section">
+        <div class="form_section">
+            <form action="#" onsubmit="handleLogin(event)">
+                <p class="text-danger" id="login_error"></p>
+                <input id="login_username" required type="text" placeholder="username">
+                <input id="login_password" required type="password" placeholder="Password">
+                <input class="submit_btn" required type="submit" value="Login">
+            </form>
+            <p>Don't have any account? <a href="./registration.html">Creat Account</a></p>
+        </div>
+        <div class="image_section">
+            <img src="./images/login.svg" alt="">
+        </div>
+       </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

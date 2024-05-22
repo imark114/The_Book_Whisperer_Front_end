@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Book Whisperer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav_section">
+        <div class="nav_logo">
+          <img src="./images/logo.png" alt="Logo" />
+          <h5>The Book Whisperer</h5>
+        </div>
+        <div class="menu_container">
+          <ul class="nav_menus">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a class="write_riview" href="./publish_book.html">
+                <i class="fas fa-plus-square"></i> Add Books</a
+              >
+            </li>
+            <div class="user_action_area d-flex gap-4 align-items-center">
+              <li id="signup_btn">
+                <a class="signup_btn" href="./registration.html">Signup</a>
+              </li>
+              <li id="login_btn"><a class="login_btn" href="./login.html">Login</a></li>
+              <li id="profile_btn">
+                <a class="login_btn" href="./profile.html">Profile</a>
+              </li>
+              <li id="logout_btn">
+                <a class="signup_btn" onclick="handleLogout()">Logout</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+     
+      
+
+      <div class="banner_section">
+        <div class="header_lef_seide">
+          <h1 class="banner_heading">Reviews and tips for books and more</h1>
+          <p>
+            Descover reviews of Books, Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Animi, obcaecati. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Quam, dolores.
+          </p>
+        </div>
+        <div class="header_right_side">
+          <img class="img-fluid" src="./images/read_book.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="mt-5 mb-5">
+        <h2>Explore by Your Choice:</h2>
+        <div class="filtering_section">
+          <div class="category_section mt-3">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </button>
+              <ul
+                id="drop_category"
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="dropdownMenuButton2"
+              ></ul>
+            </div>
+          </div>
+          <div class="search_section mt-3">
+            <form
+              class="form-inline d-flex gap-1"
+              onsubmit="handleSearch(event)"
+            >
+              <input
+                id="search_book"
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Book Title..."
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mb-5 mt-5">Recently Reviewed</h2>
+      <!-- books -->
+      <div id="no_data" class="no_data">
+        <img src="./images/noData.png" alt="No Data Found" />
+        <h2>No Data Found</h2>
+      </div>
+      <div
+        id="book_slider"
+        class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein slider-item-first-visible"
+      >
+        <ul id="books-container" class="slider-container py-2"></ul>
+
+        <button
+          type="button"
+          class="slider-nav"
+          aria-label="Go left"
+          fdprocessedid="c0nbp8"
+        ></button>
+        <button
+          type="button"
+          class="slider-nav slider-nav-next"
+          aria-label="Go left"
+          fdprocessedid="5yn9kl"
+        ></button>
+
+        <div class="slider-indicators">
+          <button
+            class="active"
+            aria-label="Go to slide"
+            fdprocessedid="l7psiy"
+          ></button>
+          <button aria-label="Go to slide" fdprocessedid="p56fd"></button>
+          <button aria-label="Go to slide" fdprocessedid="iburjp"></button>
+          <button aria-label="Go to slide" fdprocessedid="fvebh"></button>
+          <button aria-label="Go to slide" fdprocessedid="vf8a27"></button>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </body>
+</html>
